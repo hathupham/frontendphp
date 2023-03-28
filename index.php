@@ -12,8 +12,9 @@
             $("#btn-tinh-tong").click(function() {
                 $.ajax({
                     url: "tinh_tong.php",
+                    dataType: "json",
                     success: function(data) {
-                        $("#result").text("Kết quả là " + data);
+                        $("#result").text("Kết quả là " + data.result);
                     }
                 });
             });

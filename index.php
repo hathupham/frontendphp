@@ -29,13 +29,13 @@
 		            }
 		        }
 		    };
-		    xhr.open('GET', 'http://localhost/api/generate_password.php');
+		    xhr.open('GET', 'http://10.0.1.10/var/www/html/generate_password.php');
 		    xhr.send();
 		});
 	</script>
 	<?php
 	// Gọi API từ backend
-	$url = 'http://192.168.0.10/generate_password.php';
+	$url = 'http://10.0.1.10/var/www/html/generate_password.php';
 	$data = file_get_contents($url);
 	$result = json_decode($data, true);
 
